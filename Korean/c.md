@@ -1,7 +1,7 @@
 # Coding Convention for C
 기본적으로 변수나 함수의 명칭 작성 스타일은 카멜 표기법을 따르고 괄호의 위치는 BSD방식을 따릅니다.  
-```
-camelVariable // 카멜 표기법
+``` c
+int camelVariable; // 카멜 표기법
 
 if (1) // BSD
 {
@@ -30,6 +30,11 @@ void setValue3(int*** arr);
 void setValue(const int* value);
 ```
   
+또한 함수의 반환형이 변경되어서는 안된다면 함수의 반환값에 const를 사용합니다.  
+``` cpp
+int getValue() const;
+```
+  
 ## 3. define
 define은 모두 대문자로 작성하며 한 문장이 끝나면 _를 사용해 구분합니다.  
 ``` c
@@ -50,7 +55,6 @@ typedef struct ST_Test { ... } Test;
 
 ## 6. 괄호의 표기
 괄호로 묶는 제어문들은 정확한 범위를 나타내기 위해 항상 중괄호로 묶어 사용합니다.  
-### 6-1. if - else
 ``` c
 if (1)
 {
