@@ -1,4 +1,4 @@
-# Code Convention
+# Coding Convention
 ## Korean
 [C](Korean/c.md)  
 [C++](Korean/cpp.md)  
