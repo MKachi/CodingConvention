@@ -30,8 +30,8 @@ void setValue3(int*** arr);
 void setValue(const int* value);
 ```
   
-## 3. 메크로
-메크로는 모두 대문자로 작성하며 한 문장이 끝나면 _를 사용해 구분합니다.  
+## 3. define
+define은 모두 대문자로 작성하며 한 문장이 끝나면 _를 사용해 구분합니다.  
 ``` c
 #define THIS_IS_SAMPLE
 ```
