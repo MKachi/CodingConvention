@@ -144,7 +144,7 @@ public:
     Base();
     virtual ~Base();
     virtual void print() { ... }
-    
+
 };
 
 class Child
