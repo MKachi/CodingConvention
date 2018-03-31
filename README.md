@@ -1,7 +1,7 @@
 # Coding Convention
-[C](Korean/c.md)  
-[C++](Korean/cpp.md)  
-[C#](Korean/cs.md)  
-[Java](Korean/java.md)  
-[Kotlin](Korean/kotlin.md)  
-[Swift](Korean/swift.md)  
+[C](docs/c.md)  
+[C++](docs/cpp.md)  
+[C#](docs/cs.md)  
+[Java](docs/java.md)  
+[Kotlin](docs/kotlin.md)  
+[Swift](docs/swift.md)  

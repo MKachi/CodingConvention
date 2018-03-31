@@ -72,11 +72,17 @@ enum class A
 };
 ```
 
-## 6. class
+## 6. class & struct
 클래스는 특별한 경우가 아니면 기본적으로 생성자, 소멸자, 복사 생성자, 이동 생성자를 기본적으로 작성합니다.  
+클래스의 맴버 변수의 이름은 앞에 항상 _를 붙이고 항상 class의 상단에 선언합니다.  
+또한 접근 제한 키워드를 항상 명시적으로 적어줍니다.  
+C++에서 struct와 class는 기본 접근 제한의 차이밖에 없으므로 이 규칙은 동일합니다.  
 ``` cpp
 class Sample
 {
+private:
+    int _a;
+
 public:
     Sample();
     Sample(const Sample& rhs);
