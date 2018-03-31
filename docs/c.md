@@ -24,7 +24,13 @@ void setValue2(int** arr);
 void setValue3(int*** arr);
 ```
   
-## 2. const
+## 2. 함수 포인터
+함수 포인터는 항상 typedef로 재정의해 사용합니다.  
+``` c
+typedef int(*Sample)(int, int);
+```
+  
+## 3. const
 함수의 매개변수로 변경될 일이 없는 포인터를 사용할 땐 const를 사용합니다.  
 ``` c
 void setValue(const int* value);
@@ -35,25 +41,25 @@ void setValue(const int* value);
 int getValue() const;
 ```
   
-## 3. define
+## 4. define
 define은 모두 대문자로 작성하며 한 문장이 끝나면 _를 사용해 구분합니다.  
 ``` c
 #define THIS_IS_SAMPLE
 ```
   
-## 4. enum
+## 5. enum
 enum을 사용할 때에는 enum키워드를 적지않고 선언하기 위해 E_Test와 같이 이름을 붙이고 typedef로 이름을 재정의 해줍니다.  
 ```c
 typedef enum E_Test { ... } Test;
 ```
 
-## 5. struct
+## 6. struct
 struct을 사용할 때에는 struct키워드를 적지않고 선언하기 위해 ST_Test와 같이 이름을 붙이고 typedef로 이름을 재정의 해줍니다.  
 ```c
 typedef struct ST_Test { ... } Test;
 ```
 
-## 6. 괄호의 표기
+## 7. 괄호의 표기
 괄호로 묶는 제어문들은 정확한 범위를 나타내기 위해 항상 중괄호로 묶어 사용합니다.  
 ``` c
 if (1)
@@ -77,7 +83,7 @@ else if (value == 5) { printf("%d\n", value); }
 else                 { printf("%d\n", value); }
 ```
   
-## 7. switch - case
+## 8. switch - case
 switch - case문을 작성할 때 case에는 들여쓰기를 한번 사용합니다.  
 또한 예상치 못한 예외가 발생할 수 있으므로 반드시 default값을 작성합니다.  
 ``` c
