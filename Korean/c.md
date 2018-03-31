@@ -73,15 +73,6 @@ else if (value == 5) { printf("%d\n", value); }
 else                 { printf("%d\n", value); }
 ```
   
-### 6-2. do - while
-기본적으로 BSD괄호 표기를 따르지만 do - while은 다음과 같이 작성합니다.
-``` c
-do
-{
-    ...
-} while (1);
-```
-  
 ## 8. switch - case
 switch - case문을 작성할 때 case에는 들여쓰기를 한번 사용합니다.  
 또한 예상치 못한 예외가 발생할 수 있으므로 반드시 default값을 작성합니다.  
