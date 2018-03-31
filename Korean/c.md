@@ -17,12 +17,11 @@ do
 } while (1);
 ```
 ## 1. 함수
-함수의 매개변수로 배열이 사용될 경우 인자의 값은 다음과 같이 작성합니다.  
+함수의 매개변수로 배열이 사용될 경우 포인터로 작성합니다.  
 ```c
 void setValue(int* arr);
 void setValue2(int** arr);
 void setValue3(int*** arr);
-void setValue4(const int* arr); // 이 배열은 변경될 일이 없음
 ```
   
 ## 2. const
