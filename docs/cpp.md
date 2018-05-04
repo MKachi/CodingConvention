@@ -47,7 +47,28 @@ void print(const T& value);
 template <>
 void print(const string& value);
 ```
-  
+
+## 4. class 템플릿  
+class에 템플릿 메서드를 작성할 때 h파일에 작성하지 않고 hpp파일을 만들어서 작성합니다.  
+``` cpp
+// .h 파일
+template <typename T>  
+class Test
+{
+public:
+    void TestFunc1();
+    void TestFunc2();
+    
+};
+
+// .hpp 파일
+template <typename T>
+void Test<T>::TestFunc1() { ... }
+
+template <typename T>
+void Test<T>::TestFunc2() { ... }
+```
+
 ## 4. const
 함수의 매개변수로 변경될 일이 없는 참조자나 포인터를 사용할 땐 const를 사용합니다.  
 ``` cpp
