@@ -49,7 +49,7 @@ void print(const string& value);
 ```
 
 ## 4. class 템플릿  
-class에 템플릿 메서드를 작성할 때 h파일에 작성하지 않고 hpp파일을 만들어서 작성합니다.  
+class에 템플릿 메서드를 작성할 때 h파일에 작성하지 않고 inl파일을 만들어서 작성합니다.  
 ``` cpp
 // .h 파일
 template <typename T>  
@@ -61,7 +61,7 @@ public:
     
 };
 
-// .hpp 파일
+// .inl 파일
 template <typename T>
 void Test<T>::TestFunc1() { ... }
 
